@@ -2,6 +2,11 @@
 
 ## UPDATES IN PROGRESS
 ### Please check again in couple hours
+![Dashboard v0.1](/docs/Screenshot1.jpg "Dashboard")
+
+![Dashboard v0.1](/docs/Screenshot2.jpg "Dashboard")
+
+![Dashboard v0.1](/docs/Screenshot3.jpg "Dashboard")
 
 ### Features
 
