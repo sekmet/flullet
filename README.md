@@ -6,7 +6,7 @@
 
 ![Dashboard v0.1](/docs/Screenshot2.jpg "Dashboard")
 
-![Dashboard v0.1](/docs/Screenshot3.jpg "Dashboard")
+![Dashboard v0.1](/docs/Screenshot6.jpg "Dashboard")
 
 ### Features
 
