@@ -1,0 +1,6 @@
+{
+    "name": "mintify_api_testnet_rarible",
+    "mountedBinaries": {
+      "curl": "/usr/bin/curl"
+    }
+  }

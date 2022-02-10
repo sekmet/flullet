@@ -1,0 +1,22 @@
+modules_dir = "artifacts/"
+
+[[module]]
+    name = "api_testnet_opensea"
+    logger_enabled = true
+
+    [module.mounted_binaries]
+    curl = "/usr/bin/curl"
+
+[[module]]
+    name = "api_testnet_rarible"
+    logger_enabled = true
+
+    [module.mounted_binaries]
+    curl = "/usr/bin/curl"
+
+[[module]]
+    name = "api_superrare"
+    logger_enabled = true
+
+    [module.mounted_binaries]
+    curl = "/usr/bin/curl"

@@ -33,3 +33,22 @@ local
 
 # vercel
 .vercel
+
+# typescript
+*.tsbuildinfo
+
+# Wasm files
+*.wasm
+*.wat
+
+# REPL history files
+*.repl_history
+
+# WASM Target build
+/artifacts
+
+# Aqua compiled
+**/_aqua
+
+Cargo.lock
+**/target

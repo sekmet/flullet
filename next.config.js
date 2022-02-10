@@ -3,7 +3,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
 
-withBundleAnalyzer({
+module.exports = withBundleAnalyzer({
   poweredByHeader: false,
   trailingSlash: true,
   basePath: '',
@@ -12,16 +12,3 @@ withBundleAnalyzer({
   // You can remove `basePath` if you don't need it.
   reactStrictMode: true,
 });
-
-module.exports = {
-  useFileSystemPublicRoutes: true,
-  env: {
-    HOST: 'localhost',
-    PORT: 4100,
-    NEXTAUTH_URL: 'http://account.harmonypay.test',
-    API_SERVER_URL: 'http://api.harmonypay.test',
-    GRAPHQL_ENDPOINT: 'https://graphql.harmonypay.one/v1/graphql',
-    HASURA_SECRET: '5cc3ed37147dc100fa1da57fc37016579a667b657878e3e5764119806f17fb1a'
-  },
-  withBundleAnalyzer
-}

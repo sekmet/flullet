@@ -1,4 +1,4 @@
- {
+{
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
@@ -26,8 +26,9 @@
 
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "allowJs": false,
+    "allowJs": true,
     "skipLibCheck": true,
+    "downlevelIteration": true,
     "forceConsistentCasingInFileNames": true,
 
     "jsx": "preserve",
@@ -38,9 +39,12 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
+      "@/components": ["./src/components/*"],
+      "@/pages": ["./src/pages/*"],
+      "@/services/*": ["./src/lib/services/*"],
       "@/public/*": ["./public/*"]
     }
   },
   "exclude": ["./out/**/*", "./node_modules/**/*"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "postcss.config.js"]
 }

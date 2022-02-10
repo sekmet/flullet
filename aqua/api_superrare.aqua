@@ -1,0 +1,20 @@
+import "@fluencelabs/aqua-lib/builtin.aqua"
+
+const API_SUPERRARE_NODE_PEER_ID ?= "12D3KooWR4cv1a8tv7pps4HH6wePNaK6gf1Hww5wcCMzeWxyNw51"
+const API_SUPERRARE_SERVICE_ID ?= "cd506866-db9f-42d5-9162-98faca131c9f"
+
+service ApiSuperrare:
+  download(url: string) -> string
+  featured_artworks(contract1: string, contract2: string) -> string
+
+func download(url: string) -> string :
+  on API_SUPERRARE_NODE_PEER_ID:
+    ApiSuperrare API_SUPERRARE_SERVICE_ID
+    res <- ApiSuperrare.download(url)
+  <- res
+
+func featured_artworks(contract1: string, contract2: string) -> string :
+  on API_SUPERRARE_NODE_PEER_ID:
+    ApiSuperrare API_SUPERRARE_SERVICE_ID
+    res <- ApiSuperrare.featured_artworks(contract1,contract2)
+  <- res

@@ -1,0 +1,13 @@
+[package]
+name = "api_testnet_opensea"
+version = "0.1.0"
+edition = "2021"
+authors = ["Carlos Guimaraes <sekmet@open4g.com>"]
+
+[dependencies]
+marine-rs-sdk = {version = "0.6.13", features = ["logger"]}
+log = "0.4.8"
+
+[[bin]]
+path = "src/main.rs"
+name = "api_testnet_opensea"

@@ -1,0 +1,34 @@
+import "@fluencelabs/aqua-lib/builtin.aqua"
+
+const API_OPENSEA_NODE_PEER_ID ?= "12D3KooWR4cv1a8tv7pps4HH6wePNaK6gf1Hww5wcCMzeWxyNw51"
+const API_OPENSEA_SERVICE_ID ?= "272b6745-aa20-4e9e-80d7-1915ec269fca"
+
+service ApiTestnetOpensea:
+  download(url: string) -> string
+  get_all_assets(offset: string, limit: string, order: string) -> string
+  get_assets_collection(collection_address: string, offset: string, limit: string) -> string
+  get_collections(owner_address: string, offset: string, limit: string) -> string
+
+func download(url: string) -> string :
+  on API_OPENSEA_NODE_PEER_ID:
+    ApiTestnetOpensea API_OPENSEA_SERVICE_ID
+    res <- ApiTestnetOpensea.download(url)
+  <- res
+
+func get_all_assets(offset: string, limit: string, order: string) -> string :
+  on API_OPENSEA_NODE_PEER_ID:
+    ApiTestnetOpensea API_OPENSEA_SERVICE_ID
+    res <- ApiTestnetOpensea.get_all_assets(offset, limit, order)
+  <- res
+
+func get_collections(owner_address: string, offset: string, limit: string) -> string :
+  on API_OPENSEA_NODE_PEER_ID:
+    ApiTestnetOpensea API_OPENSEA_SERVICE_ID
+    res <- ApiTestnetOpensea.get_collections(owner_address, offset, limit)
+  <- res
+
+func get_assets_collection(collection_address: string, offset: string, limit: string) -> string :
+  on API_OPENSEA_NODE_PEER_ID:
+    ApiTestnetOpensea API_OPENSEA_SERVICE_ID
+    res <- ApiTestnetOpensea.get_assets_collection(collection_address, offset, limit)
+  <- res
