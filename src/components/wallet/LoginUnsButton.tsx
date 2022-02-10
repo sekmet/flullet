@@ -8,17 +8,15 @@ export default function LoginUnsButton({ handleOpenModal }: any) {
 //const uath = useUnstoppableDomains();
 //console.log(useUnstoppableDomains())
 const uauth = new UAuth({
-  clientID: 'qxRaA/ILJHo5WGXbo6NiWOI+FBModAIKVToTBGONEtI=',
-  clientSecret: 'MSk1Lx/iddaggFHSNoBNCfRn4vwblWkvmVivxFYpyww=',
-  redirectUri: 'http://localhost:3000/callback',
-  postLogoutRedirectUri: 'http://localhost:3000/',
+  clientID: process.env.UNS_CLIENTID,
+  clientSecret: process.env.UNS_CLIENTSECRET,
+  redirectUri: process.env.UNS_REDIRECT_URI,
+  postLogoutRedirectUri: process.env.UNS_LOGOUT_REDIRECT_URI,
   // Scope must include openid and wallet
   scope: 'openid wallet',
   // Injected and walletconnect connectors are required.
   //connectors: {injected, walletconnect},
 })
-
-
 
 async function handleUAuthConnect() {
     try {
