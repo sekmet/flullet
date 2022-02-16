@@ -1,5 +1,6 @@
 # Fluence Wallet (NFT wallet experience)
 
+## WORKING ALPHA VERSION - LIVE SOON
 ## Features => [TESTNETs]
 
 - Non-custodial wallet and marketplace working with ethereum, polygon, fantom, harmony, cronos and avalanche networks.
