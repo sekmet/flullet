@@ -25,6 +25,10 @@
 
 ![Minting Goerli v0.1](/docs/mint_ethereum.jpg "Minting Goerli")
 
+![Sell opensea v0.1](/docs/opensea_selling.jpg "Selling Opensea")
+
+https://testnets.opensea.io/assets/0xed97a8d1f4889a732c3942a04474ea1d990c6359/3
+
 ![Dashboard v0.1](/docs/Screenshot1.jpg "Dashboard")
 
 ![Dashboard v0.1](/docs/Screenshot2.jpg "Dashboard")
