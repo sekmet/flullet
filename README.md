@@ -10,6 +10,8 @@
 - Browse opensea and rarible market collections.
 - more soon...
 
+![Minting Goerli v0.1](/docs/mint_ethereum.jpg "Minting Goerli")
+
 ![Dashboard v0.1](/docs/Screenshot1.jpg "Dashboard")
 
 ![Dashboard v0.1](/docs/Screenshot2.jpg "Dashboard")
