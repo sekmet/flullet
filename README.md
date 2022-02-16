@@ -18,11 +18,11 @@
 
 ![create_nft_rinkeby1](/docs/create_nft_rinkeby1.jpg "create_nft_rinkeby1")
 
+![fee_minting_rinkeby1](/docs/fee_minting_rinkeby1.jpg "fee_minting_rinkeby1")
+
 ![minted_rinkeby1 v0.1](/docs/minted_rinkeby1.jpg "minted_rinkeby1")
 
 ![Minting Goerli v0.1](/docs/mint_ethereum.jpg "Minting Goerli")
-
-![fee_minting_rinkeby1](/docs/fee_minting_rinkeby1.jpg "fee_minting_rinkeby1")
 
 ![Dashboard v0.1](/docs/Screenshot1.jpg "Dashboard")
 
