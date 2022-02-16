@@ -1,7 +1,5 @@
 # Fluence Wallet (NFT wallet experience)
 
-## UPDATES IN PROGRESS
-### Please check again in couple hours
 ![Dashboard v0.1](/docs/Screenshot1.jpg "Dashboard")
 
 ![Dashboard v0.1](/docs/Screenshot2.jpg "Dashboard")
@@ -10,9 +8,10 @@
 
 ### Features
 
-- Mint your nfts in ethereum and polygon networks.
-- Buy and sell nfts in ethereum and polygon networks.
-- Browse and search for collections nfts in ethereum and polygon networks.
+- Mint your NFTs in ethereum, polygon, fantom, harmony, cronos and avalanche networks.
+- Buy and sell NFTs in ethereum, polygon, harmony, fantom, cronos and avalanche networks.
+- Browse and search for collections NFTs in ethereum, polygon, fantom, harmony, avalanche and cronos networks.
+- Browse several market collections from ethereum, fantom, harmony and avalanche networks.
 - Browse opensea and rarible market collections.
 - more soon...
 
