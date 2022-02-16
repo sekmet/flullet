@@ -10,7 +10,19 @@
 - Browse opensea and rarible market collections.
 - more soon...
 
+![eth_collections1 v0.1](/docs/eth_collections1.jpg "eth_collections1")
+
+![bsc_collection1 v0.1](/docs/bsc_collection1.jpg "bsc_collection1")
+
+![ftm_collection1 v0.1](/docs/ftm_collection1.jpg "ftm_collection1")
+
+![create_nft_rinkeby1](/docs/create_nft_rinkeby1.jpg "create_nft_rinkeby1")
+
 ![Minting Goerli v0.1](/docs/mint_ethereum.jpg "Minting Goerli")
+
+![minted_rinkeby1 v0.1](/docs/minted_rinkeby1.jpg "minted_rinkeby1")
+
+![fee_minting_rinkeby1](/docs/fee_minting_rinkeby1.jpg "fee_minting_rinkeby1")
 
 ![Dashboard v0.1](/docs/Screenshot1.jpg "Dashboard")
 
