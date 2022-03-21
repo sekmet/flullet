@@ -1,0 +1,55 @@
+type Query {
+  erc721Collections: ERC721CollectionInfo!
+  erc721CollectionByAlias: ERC721CollectionInfo!
+  getERC721Tokens: ERC721TokenMetadataResult!
+}
+
+type ERC721CollectionInfo @entity {
+  id: ID!
+  alias: String
+  name: String
+  itemName: String
+  websiteUrl: String
+  bannerUrl: String
+  thumbnailUrl: String
+  isPixel: String
+  frontendPath: String
+  socialShareUrl: String
+  maxSupply: String
+  totalSupply: String
+  totalVolume: String
+  totalVolumeUsd: String
+  last24HVolume: String
+  last24HVolumeUsd: String
+  last7DVolume: String
+  last7DVolumeUsd: String
+  last30DVolume: String
+  last30DVolumeUsd: String
+  address: String
+  marketplaceV2Address: String
+  chainId: String
+  isReleased: String
+  isPulling: String
+  isNoRarity: String
+  floor: String
+}
+
+type ERC721TokenMetadata @entity {
+  id: ID!
+  count: Int
+  tokenId: String
+  name: String
+  image: String
+  imageCdnUrl: String
+  thumbnailCdnUrl: String
+  imageContentType: String
+  background: String
+  backgroundUrl: String
+  rarityRank: String
+}
+
+type ERC721TokenMetadataResult @entity {
+  id: ID!
+  count: Int
+  tokens: [ERC721TokenMetadata!]
+}

@@ -1,7 +1,7 @@
 import "@fluencelabs/aqua-lib/builtin.aqua"
 
-const API_RARIBLE_NODE_PEER_ID ?= "12D3KooWR4cv1a8tv7pps4HH6wePNaK6gf1Hww5wcCMzeWxyNw51"
-const API_RARIBLE_SERVICE_ID ?= "355986b7-4dfc-4450-bf30-016983bcbd7c"
+const API_RARIBLE_NODE_PEER_ID ?= "12D3KooWSD5PToNiLQwKDXsu8JSysCwUt8BVUJEqCHcDe7P5h45e"
+const API_RARIBLE_SERVICE_ID ?= "e0a8f338-37ef-4055-98a0-e26b15bdd4fa"
 
 service ApiTestnetRarible:
   download(url: string) -> string

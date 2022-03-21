@@ -1,0 +1,23 @@
+query GetERC721CollectionTokens($alias: ID!, $tokenids: [String!]) {
+	getERC721Tokens(input: { alias: $alias, filters: { tokenIds: $tokenids } }) {
+		count
+		tokens {
+			...ERC721CardInfo
+			__typename
+		}
+		__typename
+	}
+}
+
+fragment ERC721CardInfo on ERC721TokenMetadata {
+	tokenId
+	name
+	image
+	imageCdnUrl
+	thumbnailCdnUrl
+	imageContentType
+	background
+	backgroundUrl
+	rarityRank
+	__typename
+}

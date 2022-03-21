@@ -7,12 +7,12 @@ import {
 export default {
   async getAllAssets({ offset = 0, limit = 20, order = 'asc' }) {
     try {
-      let response_string = await get_all_assets(
+      const response_string = await get_all_assets(
         String(offset),
         String(limit),
         order
       );
-      let response = JSON.parse(response_string);
+      const response = JSON.parse(response_string);
       return response.assets;
     } catch (error) {
       console.log(error);
@@ -20,19 +20,15 @@ export default {
     }
   },
 
-  async getAssetsCollection({
-    collection_address,
-    offset = 0,
-    limit = 20,
-  }) {
+  async getAssetsCollection({ collection_address, offset = 0, limit = 20 }) {
     try {
-      let response_string = await get_assets_collection(
+      const response_string = await get_assets_collection(
         collection_address,
         String(offset),
         String(limit)
       );
 
-      let response = JSON.parse(response_string);
+      const response = JSON.parse(response_string);
       return response.assets;
     } catch (error) {
       console.log(error);
@@ -42,7 +38,7 @@ export default {
 
   async getCollections({ owner_address, offset = 0, limit = 20 }) {
     try {
-      let response = await get_collections(
+      const response = await get_collections(
         owner_address,
         String(offset),
         String(limit)

@@ -1,0 +1,6 @@
+{
+    "name": "mintify_api_nftkeys",
+    "mountedBinaries": {
+      "curl": "/usr/bin/curl"
+    }
+  }

@@ -1,0 +1,4 @@
+module.exports = {
+nftmarketaddress: "0xcd31e081E8879d2E8939300244c12E015e8163A4",
+nftaddress: "0xed97A8D1F4889a732C3942A04474EA1d990c6359"
+}

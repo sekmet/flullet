@@ -1,0 +1,27 @@
+import "@fluencelabs/aqua-lib/builtin.aqua"
+
+const API_NFTKEYS_NODE_PEER_ID ?= "12D3KooWR4cv1a8tv7pps4HH6wePNaK6gf1Hww5wcCMzeWxyNw51"
+const API_NFTKEYS_SERVICE_ID ?= "5f7d49f8-7361-41c3-9125-328b9d70a8df"
+
+service ApiNftkeys:
+  download(url: string) -> string
+  get_all_collections() -> string
+  get_collection_tokens(alias: string) -> string
+
+func download(url: string) -> string :
+  on API_NFTKEYS_NODE_PEER_ID:
+    ApiNftkeys API_NFTKEYS_SERVICE_ID
+    res <- ApiNftkeys.download(url)
+  <- res
+
+func get_all_collections() -> string :
+  on API_NFTKEYS_NODE_PEER_ID:
+    ApiNftkeys API_NFTKEYS_SERVICE_ID
+    res <- ApiNftkeys.get_all_collections()
+  <- res
+
+func get_collection_tokens(alias: string) -> string :
+  on API_NFTKEYS_NODE_PEER_ID:
+    ApiNftkeys API_NFTKEYS_SERVICE_ID
+    res <- ApiNftkeys.get_collection_tokens(alias)
+  <- res

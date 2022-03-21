@@ -53,8 +53,6 @@ pub fn featured_artworks(contract1: String, contract2: String) -> String {
       data,
       "-H".to_string(),
       "Content-Type: application/json".to_string(),
-      "--connect-timeout".to_string(),
-      "60".to_string(),
   ];
 
   let request_params: Vec<String> = curl_params;

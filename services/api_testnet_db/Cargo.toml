@@ -1,0 +1,19 @@
+[package]
+name = "api_testnet_db"
+version = "0.1.0"
+edition = "2021"
+authors = ["Carlos Guimaraes <sekmet@open4g.com>"]
+publish = false
+
+[dependencies]
+serde = { version = "1.0.118", features = ["derive"] }
+serde_json = "1.0.64"
+marine-rs-sdk = {version = "0.6.13", features = ["logger"]}
+log = "0.4.8"
+marine = "0.6.13"
+chrono = "0.4.19"
+marine-sqlite-connector = "0.5.1"
+
+[[bin]]
+path = "src/main.rs"
+name = "api_testnet_db"

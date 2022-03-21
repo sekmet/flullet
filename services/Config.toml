@@ -20,3 +20,28 @@ modules_dir = "artifacts/"
 
     [module.mounted_binaries]
     curl = "/usr/bin/curl"
+
+[[module]]
+    name = "api_nftkeys"
+    logger_enabled = true
+
+    [module.mounted_binaries]
+    curl = "/usr/bin/curl"
+
+[[module]]
+    name = "sqlite3"
+    mem_pages_count = 100
+    logger_enabled = true
+
+    [module.wasi]
+    preopened_files = ["/tmp"]
+    mapped_dirs = { "tmp" = "/tmp" }
+
+[[module]]
+    name = "api_testnet_db"
+    mem_pages_count = 100
+    logger_enabled = true
+
+    [module.wasi]
+    preopened_files = ["/tmp"]
+    mapped_dirs = { "tmp" = "/tmp" }

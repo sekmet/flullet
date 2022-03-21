@@ -1,0 +1,31 @@
+query GetErc721Collections {
+  erc721Collections {
+  id
+  alias
+  name
+  itemName
+  websiteUrl
+  bannerUrl
+  thumbnailUrl
+  isPixel
+  frontendPath
+  socialShareUrl
+  maxSupply
+  totalSupply
+  totalVolume
+  totalVolumeUsd
+  last24HVolume
+  last24HVolumeUsd
+  last7DVolume
+  last7DVolumeUsd
+  last30DVolume
+  last30DVolumeUsd
+  address
+  marketplaceV2Address
+  chainId
+  isReleased
+  isPulling
+  isNoRarity
+  floor
+  }
+}

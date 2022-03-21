@@ -11,10 +11,10 @@
     "strictNullChecks": true,
     "noUncheckedIndexedAccess": true,
 
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "noUnusedParameters": true,
     "allowUnreachableCode": false,
     "noFallthroughCasesInSwitch": true,
@@ -39,8 +39,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
+      "@/contracts": ["./contracts/*"],
       "@/components": ["./src/components/*"],
       "@/pages": ["./src/pages/*"],
+      "@/lib": ["./src/lib/*"],
       "@/services/*": ["./src/lib/services/*"],
       "@/public/*": ["./public/*"]
     }

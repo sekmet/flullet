@@ -1,0 +1,146 @@
+import "@fluencelabs/aqua-lib/builtin.aqua"
+
+const API_TESTNETDB_NODE_PEER_ID ?= "12D3KooWSD5PToNiLQwKDXsu8JSysCwUt8BVUJEqCHcDe7P5h45e"
+const API_TESTNETDB_SERVICE_ID ?= "d0548d0d-f76d-44ac-8cb5-5fea229a5877"
+
+service ApiTestnetdb("mintify_api_testnet_db_service"):
+  download(url: string) -> string
+  get_wallets() -> string
+  get_wallet_byaddress(address: string) -> string
+  update_wallets(data_string: string) -> bool
+  get_mints_byid(id: string) -> string
+  get_all_mints() -> string
+  get_mints_byowner(owner_address: string) -> string
+  get_mints_byowner_and_chainid(owner_address: string, chain_id: string) -> string
+  update_mints(data_string: string) -> bool
+  get_sales_byid(id: string) -> string
+  get_all_sales() -> string
+  get_sales_byseller(seller_address: string) -> string
+  get_sales_byseller_and_chainid(seller_address: string, chain_id: string) -> string  
+  get_sales_byowner(owner_address: string) -> string
+  get_sales_byowner_and_chainid(owner_address: string, chain_id: string) -> string
+  update_sales(data_string: string) -> bool  
+  owner_nuclear_reset() -> bool
+  owner_nuclear_drop() -> bool
+  am_i_owner() -> bool
+  init_service() -> string
+
+func download(url: string) -> string :
+  on API_TESTNETDB_NODE_PEER_ID:
+    ApiTestnetdb API_TESTNETDB_SERVICE_ID
+    res <- ApiTestnetdb.download(url)
+  <- res
+
+func init_service() -> string :
+  on API_TESTNETDB_NODE_PEER_ID:
+    ApiTestnetdb API_TESTNETDB_SERVICE_ID
+    res <- ApiTestnetdb.init_service()
+  <- res
+
+func get_wallets() -> string :
+  on API_TESTNETDB_NODE_PEER_ID:
+    ApiTestnetdb API_TESTNETDB_SERVICE_ID
+    res <- ApiTestnetdb.get_wallets()
+  <- res
+
+func get_wallet_byaddress(address: string) -> string :
+  on API_TESTNETDB_NODE_PEER_ID:
+    ApiTestnetdb API_TESTNETDB_SERVICE_ID
+    res <- ApiTestnetdb.get_wallet_byaddress(address)
+  <- res  
+
+func update_wallets(data_string: string) -> bool :
+  on API_TESTNETDB_NODE_PEER_ID:
+    ApiTestnetdb API_TESTNETDB_SERVICE_ID
+    res <- ApiTestnetdb.update_wallets(data_string)
+  <- res
+
+func get_all_mints() -> string :
+  on API_TESTNETDB_NODE_PEER_ID:
+    ApiTestnetdb API_TESTNETDB_SERVICE_ID
+    res <- ApiTestnetdb.get_all_mints()
+  <- res
+
+func get_mints_byid(id: string) -> string :
+  on API_TESTNETDB_NODE_PEER_ID:
+    ApiTestnetdb API_TESTNETDB_SERVICE_ID
+    res <- ApiTestnetdb.get_mints_byid(id)
+  <- res  
+
+func get_mints_byowner(owner_address: string) -> string :
+  on API_TESTNETDB_NODE_PEER_ID:
+    ApiTestnetdb API_TESTNETDB_SERVICE_ID
+    res <- ApiTestnetdb.get_mints_byowner(owner_address)
+  <- res
+
+func get_mints_byowner_and_chainid(owner_address: string, chain_id: string) -> string :
+  on API_TESTNETDB_NODE_PEER_ID:
+    ApiTestnetdb API_TESTNETDB_SERVICE_ID
+    res <- ApiTestnetdb.get_mints_byowner_and_chainid(owner_address, chain_id)
+  <- res
+
+func update_mints(data_string: string) -> bool :
+  on API_TESTNETDB_NODE_PEER_ID:
+    ApiTestnetdb API_TESTNETDB_SERVICE_ID
+    res <- ApiTestnetdb.update_mints(data_string)
+  <- res
+
+func get_all_sales() -> string :
+  on API_TESTNETDB_NODE_PEER_ID:
+    ApiTestnetdb API_TESTNETDB_SERVICE_ID
+    res <- ApiTestnetdb.get_all_sales()
+  <- res
+
+func get_sales_byid(id: string) -> string :
+  on API_TESTNETDB_NODE_PEER_ID:
+    ApiTestnetdb API_TESTNETDB_SERVICE_ID
+    res <- ApiTestnetdb.get_sales_byid(id)
+  <- res  
+
+func get_sales_byseller(seller_address: string) -> string :
+  on API_TESTNETDB_NODE_PEER_ID:
+    ApiTestnetdb API_TESTNETDB_SERVICE_ID
+    res <- ApiTestnetdb.get_sales_byseller(seller_address)
+  <- res
+
+func get_sales_byseller_and_chainid(seller_address: string, chain_id: string) -> string :
+  on API_TESTNETDB_NODE_PEER_ID:
+    ApiTestnetdb API_TESTNETDB_SERVICE_ID
+    res <- ApiTestnetdb.get_sales_byseller_and_chainid(seller_address, chain_id)
+  <- res
+
+func get_sales_byowner(owner_address: string) -> string :
+  on API_TESTNETDB_NODE_PEER_ID:
+    ApiTestnetdb API_TESTNETDB_SERVICE_ID
+    res <- ApiTestnetdb.get_sales_byowner(owner_address)
+  <- res
+
+func get_sales_byowner_and_chainid(owner_address: string, chain_id: string) -> string :
+  on API_TESTNETDB_NODE_PEER_ID:
+    ApiTestnetdb API_TESTNETDB_SERVICE_ID
+    res <- ApiTestnetdb.get_sales_byowner_and_chainid(owner_address, chain_id)
+  <- res
+
+func update_sales(data_string: string) -> bool :
+  on API_TESTNETDB_NODE_PEER_ID:
+    ApiTestnetdb API_TESTNETDB_SERVICE_ID
+    res <- ApiTestnetdb.update_sales(data_string)
+  <- res
+
+func owner_nuclear_reset() -> bool :
+  on API_TESTNETDB_NODE_PEER_ID:
+    ApiTestnetdb API_TESTNETDB_SERVICE_ID
+    res <- ApiTestnetdb.owner_nuclear_reset()
+  <- res
+
+func owner_nuclear_drop() -> bool :
+  on API_TESTNETDB_NODE_PEER_ID:
+    ApiTestnetdb API_TESTNETDB_SERVICE_ID
+    res <- ApiTestnetdb.owner_nuclear_drop()
+  <- res
+
+func am_i_owner() -> bool :
+  on API_TESTNETDB_NODE_PEER_ID:
+    ApiTestnetdb API_TESTNETDB_SERVICE_ID
+    res <- ApiTestnetdb.am_i_owner()
+  <- res

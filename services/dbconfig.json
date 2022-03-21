@@ -1,0 +1,23 @@
+{
+	"mintify_api_testnet_db_service": {
+		"name": "mintify_api_testnet_db_service",
+		"modules": [
+			{
+				"name": "sqlite3",
+				"path": "./artifacts/sqlite3.wasm",
+				"preopened_files": ["/tmp"],
+				"mapped_dirs": [["tmp", "/tmp"]],
+				"logger_enabled": [true],
+				"mem_pages_count": 100
+			},
+			{
+				"name": "api_testnet_db",
+				"path": "./artifacts/api_testnet_db.wasm",
+				"preopened_files": ["/tmp"],
+				"mapped_dirs": [["tmp", "/tmp"]],
+				"logger_enabled": [true],
+				"mem_pages_count": 100
+			}
+		]
+	}
+}
