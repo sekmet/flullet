@@ -3,10 +3,10 @@
 ## WORKING ALPHA VERSION - LIVE SOON
 ## Features => [TESTNETs]
 
-- Non-custodial wallet and marketplace working with ethereum, polygon, fantom, harmony, cronos and avalanche networks.
-- Mint your NFTs in ethereum, polygon, fantom, harmony, cronos and avalanche networks.
-- Buy and sell NFTs in ethereum, polygon, harmony, fantom, cronos and avalanche networks.
-- Browse and search for collections NFTs in ethereum, polygon, fantom, harmony, avalanche and cronos networks.
+- Non-custodial wallet and marketplace working with ethereum, aurora, polygon, fantom, harmony, cronos and avalanche networks.
+- Mint your NFTs in ethereum, aurora, polygon, fantom, harmony, cronos and avalanche networks.
+- Buy and sell NFTs in ethereum, aurora, polygon, harmony, fantom, cronos and avalanche networks.
+- Browse collections NFTs in ethereum, aurora, polygon, fantom, harmony, avalanche and cronos networks.
 - Browse several market collections from ethereum, fantom, harmony and avalanche networks.
 - Browse opensea and rarible market collections.
 - more soon...
